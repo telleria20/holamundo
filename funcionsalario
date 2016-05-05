@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+float salario(float h,float c);
+
+void main()
+{
+	float horas,costo,productoSalario;
+	cout<<"Ingrese horas: "<<endl;
+	cin>>horas;
+	cout<<"Ingrese costo: "<<endl;
+	cin>>costo;				
+	productoSalario = salario(horas, costo);
+	cout<<"El salario del empleado es: " <<productoSalario<<endl;
+	
+	getch();
+}
+
+
+float salario(float h,float c)
+{
+	float  producto;
+	producto=h*c;
+	return producto;
+}
+
